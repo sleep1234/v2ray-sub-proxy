@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# IDE / editor
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Build artifacts / vendor / binaries
+gradle-*/
+*.apk
+*.zip
+*.tar.gz
+*.bin
+*.exe
+*.dll
+*.so
+
+# NAS runtime cache (contains live node list — regenerate on deploy)
+local/last_good.txt
+
+# Third-party reference config (not authored here)
+local/other_vendor_clash.yaml
+
+# Generated / screenshot artifacts
+local/clash_screenshot.jpg
+
+# Other projects in workspace (not part of this repo)
+dingtalk-assistant/
+FreeVirtualEnv/
+global-loc-module/
+VirtualRegion_*.md
+FreeVirtualEnv_*.md

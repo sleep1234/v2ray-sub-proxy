@@ -1,0 +1,15 @@
+[Unit]
+Description=V2Ray built-in subscription relay (decrypt fanqiang mirrors, serve plain on :60088)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=/vol1/1000/9/sub-proxy
+ExecStart=/usr/bin/python3 /vol1/1000/9/sub-proxy/sub_proxy.py
+Restart=always
+RestartSec=5
+NoNewPrivileges=true
+
+[Install]
+WantedBy=multi-user.target
